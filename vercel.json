@@ -14,8 +14,8 @@
   ],
   "rewrites": [
     {
-      "source": "/build/(.*)",
-      "destination": "/public/build/$1"
+      "source": "/(.*)",
+      "destination": "/public/$1"
     },
     {
       "source": "/(.*)",
