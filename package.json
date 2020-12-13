@@ -9,10 +9,10 @@
     "start": "concurrently \"tsc -b -w --preserveWatchOutput\" \"remix run\" \"vercel dev\""
   },
   "dependencies": {
-    "@remix-run/cli": "^0.8.2",
-    "@remix-run/data": "^0.8.2",
-    "@remix-run/react": "^0.8.2",
-    "@remix-run/vercel": "^0.8.2",
+    "@remix-run/cli": "^0.8.3",
+    "@remix-run/data": "^0.8.3",
+    "@remix-run/react": "^0.8.3",
+    "@remix-run/vercel": "^0.8.3",
     "@vercel/node": "1.8.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
