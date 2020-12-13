@@ -52,6 +52,14 @@ https://vercel.com/<vercel user name>/<name of your app>/settings/environment-va
 
 Check the box that says "Automatically expose System Environment Variables". More info here: https://vercel.com/docs/environment-variables#system-environment-variables
 
+Then you need to add your Remix token to your environments:
+
+```bash
+vercel env add plain NPM_RC development < .npmrc
+vercel env add plain NPM_RC preview < .npmrc
+vercel env add plain NPM_RC production < .npmrc
+```
+
 Once that's done you can deploy!
 
 ```
