@@ -3,16 +3,15 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "postinstall": "tsc -b",
-    "predeploy": "remix build && tsc -b",
+    "predeploy": "remix build",
     "deploy": "vercel",
-    "start": "concurrently \"tsc -b -w --preserveWatchOutput\" \"remix run\" \"vercel dev\""
+    "start": "concurrently \"remix run\" \"vercel dev\""
   },
   "dependencies": {
-    "@remix-run/cli": "^0.8.3",
-    "@remix-run/data": "^0.8.3",
-    "@remix-run/react": "^0.8.3",
-    "@remix-run/vercel": "^0.8.3",
+    "@remix-run/cli": "pre",
+    "@remix-run/data": "pre",
+    "@remix-run/react": "pre",
+    "@remix-run/vercel": "pre",
     "@vercel/node": "1.8.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

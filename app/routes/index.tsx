@@ -1,18 +1,24 @@
 import { useRouteData } from "@remix-run/react";
+import type { Loader } from "@remix-run/data";
 
-export function meta() {
+export let loader: Loader = async () => {
+  return {
+    message: "this is awesome 😎",
+  };
+};
+
+export let meta = () => {
   return {
     title: "Remix Starter",
     description: "Welcome to remix!",
   };
-}
+};
 
 export default function Index() {
   let data = useRouteData();
 
   return (
-    <div style={{ textAlign: "center", padding: 20 }}>
-      <h2>Welcome to Remix!</h2>
+    <div style={{ padding: "20px 0" }}>
       <p>
         <a href="https://remix.run/dashboard/docs">Check out the docs</a> to get
         started.
