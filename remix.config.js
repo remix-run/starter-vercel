@@ -25,12 +25,10 @@ module.exports = {
   //     route(
   //       // The URL path for this route.
   //       "/pages/one",
-  //       // The path to this route's component file, relative to `appDirectory`.
+  //       // The path to this route's module file, relative to `appDirectory`.
   //       "pages/one",
   //       // Options:
   //       {
-  //         // The path to this route's data module, relative to `dataDirectory`.
-  //         loader: "...",
   //         // The path to this route's styles file, relative to `appDirectory`.
   //         styles: "..."
   //       }
@@ -62,5 +60,5 @@ module.exports = {
   /**
    * The port to use when running `remix run`. Defaults to 8002.
    */
-  devServerPort: 8002,
+  devServerPort: 8002
 };
