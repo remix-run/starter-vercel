@@ -8,7 +8,7 @@
       "src": "index.js",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["remix.config.js", "app-build/**/*", "data-build/**/*"]
+        "includeFiles": ["remix.config.js", "app-build/**/*"]
       }
     }
   ],
