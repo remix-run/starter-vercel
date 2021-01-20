@@ -1,8 +1,6 @@
 node_modules/
 
-/.cache
 /app-build
-/data-build
 /public/build
 
 .vercel
