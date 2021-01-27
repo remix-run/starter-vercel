@@ -8,10 +8,10 @@
     "start": "concurrently \"remix run\" \"vercel dev\""
   },
   "dependencies": {
-    "@remix-run/cli": "^0.9.1",
-    "@remix-run/data": "^0.9.1",
-    "@remix-run/react": "^0.9.1",
-    "@remix-run/vercel": "^0.9.1",
+    "@remix-run/cli": "^0.10.0",
+    "@remix-run/data": "^0.10.0",
+    "@remix-run/react": "^0.10.0",
+    "@remix-run/vercel": "^0.10.0",
     "@vercel/node": "1.8.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
