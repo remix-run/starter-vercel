@@ -66,6 +66,10 @@ $ npm run deploy
 
 > Note: Typically Vercel builds your app for you when you run `vercel`, but it chokes on TypeScript files and we don't know how to tell it to ignore them. We find it simpler (for now) to just run the build yourself before deploying and telling Vercel to not worry about building for us (you can see in package.json the `vercel-build` command is empty).
 
+### GitHub Action
+
+@mcansh Wrote this github action to deploy whenever you push to the main branch: https://gist.github.com/mcansh/91f8effda798b41bb373351fad217070. Thanks Logan!
+
 ## Documentation
 
 Detailed documentation for Remix [is available at remix.run](https://remix.run/dashboard/docs).
