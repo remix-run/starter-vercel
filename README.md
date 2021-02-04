@@ -2,15 +2,13 @@
 
 Welcome to Remix!
 
-This is a starter repo for using [Remix](https://remix.run) with
-[Vercel](http://vercel.com/).
+This is a starter repo for using [Remix](https://remix.run) with [Vercel](http://vercel.com/).
 
 ## Development
 
 After cloning the repo, rename `.npmrc.example` to `.npmrc` and insert the license key you get from [logging in to your dashboard at remix.run](https://remix.run).
 
-> Note: if this is a public repo, you'll probably want to move the line with
-> your key into `~/.npmrc` to keep it private.
+> Note: if this is a public repo, you'll probably want to move the line with your key into `~/.npmrc` to keep it private.
 
 Then, install all dependencies using `npm`:
 
@@ -68,7 +66,7 @@ $ npm run deploy
 
 ### GitHub Action
 
-@mcansh Wrote this github action to deploy whenever you push to the main branch: https://gist.github.com/mcansh/91f8effda798b41bb373351fad217070. Thanks Logan!
+@mcansh Wrote this GitHub action to deploy whenever you push to the main branch: https://gist.github.com/mcansh/91f8effda798b41bb373351fad217070. Thanks, Logan!
 
 ## Documentation
 
