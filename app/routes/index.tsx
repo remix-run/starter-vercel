@@ -1,16 +1,26 @@
+import type {
+  MetaFunction,
+  LinksFunction,
+  LoaderFunction
+} from "@remix-run/react";
 import { useRouteData } from "@remix-run/react";
-import type { Loader } from "@remix-run/data";
 
-export let loader: Loader = async () => {
-  return { message: "this is awesome 😎" };
-};
+import styles from "url:../styles/index.css";
 
-export function meta() {
+export let meta: MetaFunction = () => {
   return {
     title: "Remix Starter",
-    description: "Welcome to remix!",
+    description: "Welcome to remix!"
   };
-}
+};
+
+export let links: LinksFunction = () => {
+  return [{ rel: "stylesheet", href: styles }];
+};
+
+export let loader: LoaderFunction = () => {
+  return { message: "this is awesome 😎" };
+};
 
 export default function Index() {
   let data = useRouteData();
