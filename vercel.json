@@ -6,10 +6,7 @@
     },
     {
       "src": "index.js",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": ["remix.config.js", "app-build/**/*"]
-      }
+      "use": "@vercel/node"
     }
   ],
   "rewrites": [
@@ -28,7 +25,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31540000000"
+          "value": "public, max-age=31536000"
         }
       ]
     }

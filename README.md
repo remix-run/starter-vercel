@@ -40,15 +40,7 @@ This will start the Remix development server, a TypeScript watcher for your serv
 
 ## Deploying to Production
 
-Before you can deploy to production you'll need to turn on "System Environment Variables" on your Vercel app. Log into Vercel and navigate to the app's settings environment variables page:
-
-```
-https://vercel.com/<vercel user name>/<name of your app>/settings/environment-variables
-```
-
-Check the box that says "Automatically expose System Environment Variables". More info here: https://vercel.com/docs/environment-variables#system-environment-variables
-
-Then you need to add your Remix token to your environments:
+You will need to add your npmrc with your Remix token inside it to your environments:
 
 ```bash
 $ vercel env add plain NPM_RC development < .npmrc
@@ -59,14 +51,8 @@ $ vercel env add plain NPM_RC production < .npmrc
 Once that's done you can deploy!
 
 ```sh
-$ npm run deploy
+$ vercel
 ```
-
-> Note: Typically Vercel builds your app for you when you run `vercel`, but it chokes on TypeScript files and we don't know how to tell it to ignore them. We find it simpler (for now) to just run the build yourself before deploying and telling Vercel to not worry about building for us (you can see in package.json the `vercel-build` command is empty).
-
-### GitHub Action
-
-@mcansh Wrote this GitHub action to deploy whenever you push to the main branch: https://gist.github.com/mcansh/91f8effda798b41bb373351fad217070. Thanks, Logan!
 
 ## Documentation
 

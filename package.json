@@ -3,15 +3,14 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "predeploy": "remix build",
+    "build": "remix build",
     "deploy": "vercel",
     "start": "concurrently \"remix run\" \"vercel dev\""
   },
   "dependencies": {
-    "@remix-run/cli": "^0.13.0",
-    "@remix-run/data": "^0.13.0",
-    "@remix-run/react": "^0.13.0",
-    "@remix-run/vercel": "^0.13.0",
+    "@remix-run/data": "^0.14.0",
+    "@remix-run/react": "^0.14.0",
+    "@remix-run/vercel": "^0.14.0",
     "@vercel/node": "1.8.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -19,6 +18,11 @@
     "react-router-dom": "^6.0.0-beta.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@remix-run/dev": "^0.14.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "concurrently": "^5.3.0",
@@ -26,6 +30,6 @@
     "vercel": "^21.2.2"
   },
   "engines": {
-    "node": "12"
+    "node": "14.x"
   }
 }
