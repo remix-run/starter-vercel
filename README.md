@@ -20,23 +20,19 @@ Your `@remix-run/*` dependencies will come from the Remix package registry.
 
 ### First Run
 
-The start script in this project starts a few processes, one of which is `vercel dev`. On your first run, however, you'll need to run `vercel dev` alone to get it set up with Vercel.
+Before you can run the app in development you need link the project to a new vercel project on your account.
 
 ```sh
-$ vercel dev
+$ vercel link
 ```
 
-Follow the prompts, and when the server is started, end it with control + C.
-
-Now whenever you're developing you can use the normal start script:
+Follow the prompts, and when its done you should be able to get started:
 
 ```sh
 $ npm start
 ```
 
-This will start the Remix development server, a TypeScript watcher for your server code, and the vercel development server.
-
-> Note: In production the Remix asset development server and TypeScript watcher aren't used.
+This will start the Remix's build watcher and the vercel development server.
 
 ## Deploying to Production
 
