@@ -3,9 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
+    "postinstall": "npm run build",
     "build": "remix build2",
-    "deploy": "vercel",
-    "start": "concurrently \"remix run2\" \"vercel dev\""
+    "start": "concurrently \"remix run2\" \"vercel dev\"",
+    "deploy": "vercel"
   },
   "dependencies": {
     "@remix-run/node": "^0.15.0",
