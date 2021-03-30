@@ -1,7 +1,8 @@
 node_modules/
 package-lock.json
 
-/build
-/public/build
+/.cache/
+/build/
+/public/build/
 
 .vercel
