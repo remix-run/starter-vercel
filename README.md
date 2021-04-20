@@ -47,6 +47,7 @@ $ vercel env add plain NPM_RC production < .npmrc
 Once that's done you can deploy!
 
 ```sh
+$ npm run build
 $ vercel
 ```
 
